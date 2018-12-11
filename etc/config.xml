@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <worldnettps_directpost>
+                <active>0</active>
+                <gatewayUrl>https://payments.worldnettps.com/merchant/paymentpage</gatewayUrl>
+                <testGatewayUrl>https://testpayments.worldnettps.com/merchant/paymentpage</testGatewayUrl>
+                <gatewayUrlXml>https://payments.worldnettps.com/merchant/xmlpayment</gatewayUrlXml>
+                <testGatewayUrlXml>https://testpayments.worldnettps.com/merchant/xmlpayment</testGatewayUrlXml>
+                <integration_type>xml</integration_type>
+                <transaction_type>7</transaction_type>
+                <payment_action>authorize</payment_action>
+                <mode>TEST</mode>
+                <debug>0</debug>
+                <order_status>pending</order_status>
+                <email_customer>1</email_customer>
+                <cctypes>AE,VI,MC,DI,JCB,DN</cctypes>
+                <useccv>1</useccv>
+                <allowspecific>0</allowspecific>
+                <model>WorldnetTPS\Payment\Model\Directpost</model>
+                <title>WorldnetTPS Payment Gateway</title>
+                <currency>EUR</currency>
+
+                <ccfields>x_card_code,x_exp_date,x_card_num,x_card_name</ccfields>
+                <create_order_before>1</create_order_before>
+                <date_delim>/</date_delim>
+
+                <place_order_url>worldnettps/directpost_payment/place</place_order_url>
+                <cgi_url_test_mode>/index.php/worldnettps/directpost_payment/forward</cgi_url_test_mode>
+                <cgi_url>/index.php/worldnettps/directpost_payment/forward</cgi_url>
+            </worldnettps_directpost>
+        </payment>
+    </default>
+</config>

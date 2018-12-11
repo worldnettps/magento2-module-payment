@@ -1,0 +1,17 @@
+{
+    "name": "worldnettps/module-payment",
+    "description": "N/A",
+    "version": "1.4.0",
+    "type": "magento2-module",
+    "license": [
+        "GPL-3.0-or-later"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "WorldnetTPS\\Payment\\": ""
+        }
+    }
+}
