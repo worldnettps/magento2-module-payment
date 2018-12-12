@@ -1,10 +1,16 @@
 {
     "name": "worldnettps/module-payment",
     "description": "N/A",
-    "version": "1.4.0",
     "type": "magento2-module",
     "license": [
         "GPL-3.0-or-later"
+    ],
+    "authors": [
+        {
+            "name": "WorldNetTPS",
+            "email": "support@worldnettps.com",
+            "homepage": "https://worldnettps.com/"
+        }
     ],
     "autoload": {
         "files": [
